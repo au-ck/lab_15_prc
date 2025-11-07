@@ -1,14 +1,12 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import NavBar from "./components/NavBar";  // ✅ matches component name
 
 function App() {
   return (
-    <div>
-      <BrowserRouter>
-      <Navbar />
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <NavBar />  {/* ✅ correct casing */}
+    </BrowserRouter>
   );
 }
 
