@@ -13,6 +13,7 @@ services:
 
   backend:
     container_name: springboot
+    image: mnck/lab-backend:latest
     build:
       context: ./backend-springbootapp-31371
       dockerfile: backend.Dockerfile
@@ -24,6 +25,7 @@ services:
 
   frontend:
     container_name: react
+    image: mnck/lab-frontend:latest
     build:
       context: ./frontend-reactapp-31371
       dockerfile: frontend.Dockerfile
